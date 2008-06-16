@@ -1,6 +1,6 @@
 %define shortname QtCurve
 
-Name: kde4-style-%{shortname} 
+Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
 Version: 0.59.2
 Release: %mkrel 1
@@ -12,12 +12,13 @@ License: GPL
 BuildRequires: kdelibs4-devel
 BuildRequires: kdebase4-workspace-devel
 Conflicts: kde-style-QtCurve < 0.59
+Obsoletes: kde4-style-QtCurve
 
 %description
 QtCurve theme for KDE 4
 
 %prep 
-%setup -q -n %shortname-KDE4-%version
+%setup -q -n %{shortname}-KDE4-%version
 
 %build 
 %cmake_kde4 
@@ -25,9 +26,7 @@ QtCurve theme for KDE 4
 
 %install
 rm -rf $RPM_BUILD_ROOT
-pushd build
-%makeinstall_std
-popd
+%makeinstall_std -C build
 
 %clean 
 rm -rf $RPM_BUILD_ROOT 
