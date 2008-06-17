@@ -3,7 +3,7 @@
 Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
 Version: 0.59.2
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: %{shortname}-KDE4-%{version}.tar.bz2
 URL: http://www.kde-look.org
 Group: Graphical desktop/KDE
