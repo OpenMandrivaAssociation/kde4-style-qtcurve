@@ -3,7 +3,7 @@
 Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
 Version: 0.62.4
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: http://home.freeuk.com/cpdrummond/%{shortname}-KDE4-%{version}.tar.bz2
 URL: http://www.kde-look.org/content/show.php?content=40492
 Group: Graphical desktop/KDE
@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT 
 
 %files
-%defattr(-,-,root)
+%defattr(-,root,root)
 %doc README ChangeLog TODO
 %{_kde_libdir}/kde4/kstyle_qtcurve_config.so
 %{_kde_libdir}/kde4/kwin3_qtcurve.so
