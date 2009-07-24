@@ -2,8 +2,8 @@
 
 Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
-Version: 0.65.1
-Release: %mkrel 2
+Version: 0.67.0
+Release: %mkrel 1
 Source0: http://home.freeuk.com/cpdrummond/%{shortname}-KDE4-%{version}.tar.bz2
 Patch0: kde4-style-qtcurve-kwin.patch
 URL: http://www.kde-look.org/content/show.php?content=40492
@@ -27,13 +27,14 @@ QtCurve theme for KDE 4
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std -C build
+%find_lang qtcurve
 
 %clean 
-rm -rf $RPM_BUILD_ROOT 
+rm -rf %{buildroot} 
 
-%files
+%files -f qtcurve.lang
 %defattr(-,root,root)
 %doc README ChangeLog TODO
 %{_kde_libdir}/kde4/kstyle_qtcurve_config.so
