@@ -1,7 +1,7 @@
 %define shortname QtCurve
 Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
-Version: 0.67.5
+Version: 0.68.0
 Release: %mkrel 1
 Source0: http://home.freeuk.com/cpdrummond/%{shortname}-KDE4-%{version}.tar.bz2
 URL: http://www.kde-look.org/content/show.php?content=40492
