@@ -3,7 +3,7 @@
 
 Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
-Version: 1.1.1
+Version: 1.2.0
 Release: %mkrel 1
 Source0: http://craigd.wikispaces.com/file/view/%{shortname}-KDE4-%{version}.tar.bz2
 URL: http://www.kde-look.org/content/show.php?content=40492
@@ -59,4 +59,3 @@ rm -rf %{buildroot}
 %{_kde_libdir}/kde4/kwin3_qtcurve.so
 %{_kde_libdir}/kde4/kwin_qtcurve_config.so
 %{_kde_libdir}/kde4/plugins/styles/qtcurve.so
-
