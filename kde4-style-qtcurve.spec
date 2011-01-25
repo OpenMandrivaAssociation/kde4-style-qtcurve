@@ -3,7 +3,7 @@
 
 Name: kde4-style-qtcurve
 Summary: QtCurve Theme for KDE4
-Version: 1.7.2
+Version: 1.8.4
 Release: %mkrel 1
 Source0: http://craigd.wikispaces.com/file/view/%{shortname}-KDE4-%{version}.tar.bz2
 URL: http://www.kde-look.org/content/show.php?content=40492
@@ -14,6 +14,8 @@ BuildRequires: kdelibs4-devel
 BuildRequires: kdebase4-workspace-devel
 Requires: %{_lib}%{name} = %{version}
 Suggests: qtcurve-gtk2
+#added for test purpose by bedi
+Suggests: oxygen-gtk
 Suggests: systemsettings-qt-gtk
 Conflicts: kde-style-QtCurve < 0.59
 Obsoletes: kde4-style-QtCurve < 0.59.3
