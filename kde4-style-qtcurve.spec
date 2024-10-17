@@ -7,7 +7,7 @@ Version:	1.8.14
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
-Url:		http://www.kde-look.org/content/show.php?content=40492
+Url:		https://www.kde-look.org/content/show.php?content=40492
 Source0:	http://craigd.wikispaces.com/file/view/%{shortname}-KDE4-%{version}.tar.bz2
 Patch0:		QtCurve-KDE4-1.8.11-l10n-ru.patch
 
